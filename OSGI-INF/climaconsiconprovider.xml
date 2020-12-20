@@ -11,7 +11,7 @@
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.openhab.ui.iconset.climacons">
    <implementation class="org.openhab.ui.iconset.climacons.internal.ClimaconsIconProvider"/>
    <service>
-      <provide interface="org.eclipse.smarthome.ui.icon.IconProvider"/>
+      <provide interface="org.openhab.ui.icon.IconProvider"/>
    </service>
-   <reference bind="setTranslationProvider" cardinality="0..1" interface="org.eclipse.smarthome.core.i18n.TranslationProvider" name="TranslationProvider" policy="static" unbind="unsetTranslationProvider"/>
+   <reference bind="setTranslationProvider" cardinality="0..1" interface="org.openhab.core.i18n.TranslationProvider" name="TranslationProvider" policy="static" unbind="unsetTranslationProvider"/>
 </scr:component>
